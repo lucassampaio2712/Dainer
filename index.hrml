@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dainer - Nostalgia Americana &amp; Elegância Contemporânea</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#df1627",
+                        "primary-hover": "#b91220",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#181112",
+                        "surface-dark": "#241a1b",
+                        "accent-gold": "#d4af37",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    boxShadow: {
+                        "neon": "0 0 10px rgba(223, 22, 39, 0.5), 0 0 20px rgba(223, 22, 39, 0.3)",
+                        "glass": "0 8px 32px 0 rgba(0, 0, 0, 0.37)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #181112; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #38292a; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #df1627; 
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white antialiased overflow-x-hidden">
+<!-- Navbar -->
+<div class="fixed top-0 w-full z-50 transition-all duration-300 bg-background-dark/90 backdrop-blur-md border-b border-[#38292a]">
+<div class="px-4 lg:px-10 py-3 max-w-[1400px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2 text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">dinner_dining</span>
+</div>
+<h2 class="text-white text-xl font-black tracking-tighter uppercase">Dainer</h2>
+</div>
+<div class="hidden lg:flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="text-white hover:text-primary text-sm font-medium transition-colors" href="#menu">Menu</a>
+<a class="text-white hover:text-primary text-sm font-medium transition-colors" href="#reservas">Reservas</a>
+<a class="text-white hover:text-primary text-sm font-medium transition-colors" href="#location">Localização</a>
+<a class="text-white hover:text-primary text-sm font-medium transition-colors" href="#about">Sobre</a>
+</nav>
+</div>
+<div class="flex gap-3">
+<button class="hidden sm:flex h-10 px-5 items-center justify-center rounded-full bg-primary hover:bg-primary-hover shadow-neon transition-all text-white text-sm font-bold tracking-wide">
+                    Reserve agora
+                </button>
+<button class="h-10 px-5 flex items-center justify-center rounded-full bg-[#38292a] hover:bg-[#4a3637] transition-all text-white text-sm font-bold tracking-wide">
+<span class="truncate">Retirada</span>
+</button>
+<button class="lg:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<div class="relative min-h-screen w-full flex flex-col items-center justify-center pt-20">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/50 to-background-dark/30 z-10"></div>
+<div class="absolute inset-0 bg-black/40 z-0"></div>
+<div class="h-full w-full bg-cover bg-center" data-alt="Cinematic diner interior with warm lighting and red booths" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADMk310MDi-usqkbcycCE1xEqQZIFJ2C2E0HDAbJsdfx1xQ3Xgf51-m2S8PX0XujtS93qi1cBmTuibq8Yfkov8s8nel1J2bOvz8U2ICcT98tOV3EfHXlxNwthVnVsNhvEnhlsYPRZ9eFum-M5FjErY6jEB-o6SJKtZbBHlxA-F9Ir8L0ZOsPxDKkeEqTIMgGJ0ZdelwvweRRpmuqgw7-7D_Dn40uBhP8fN9OHPQXYXO-tQS2d5Ds92pzrvC5yskZaYy3HqCLvIXnM');">
+</div>
+</div>
+<div class="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6 animate-fade-in-up">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-medium tracking-widest uppercase text-white/90">Botafogo, Rio de Janeiro</span>
+</div>
+<h1 class="text-5xl sm:text-7xl font-black text-white leading-[1.1] tracking-tight mb-6 text-glow">
+                Nostalgia Americana, <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Elegância Contemporânea</span>
+</h1>
+<p class="text-lg sm:text-xl text-gray-200 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+                A experiência definitiva de diner dos anos 60. Clássicos reimaginados com ingredientes premium e um toque de luxo carioca.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+<button class="w-full sm:w-auto h-14 px-8 rounded-full bg-primary hover:bg-primary-hover shadow-neon transition-all transform hover:scale-105 text-white text-base font-bold tracking-wide flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">calendar_today</span>
+                    Reserve sua mesa
+                </button>
+<button class="w-full sm:w-auto h-14 px-8 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/10 transition-all text-white text-base font-bold tracking-wide flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">shopping_bag</span>
+                    Pedir para retirada
+                </button>
+</div>
+<div class="hidden mt-12 flex items-center justify-center gap-2 text-sm text-gray-400">
+<span class="hidden material-symbols-outlined text-green-500 text-lg">check_circle</span>
+
+</div>
+</div>
+</div>
+<!-- Rating Summary / Why People Love Dainer -->
+<div class="py-16 bg-background-dark border-b border-[#38292a]">
+<div class="container mx-auto px-4 max-w-6xl">
+<div class="flex flex-col md:flex-row gap-12 items-center justify-between">
+<!-- Score Block -->
+<div class="flex flex-col gap-4">
+<div class="flex items-baseline gap-4">
+<span class="text-6xl font-black text-white">4.7</span>
+<div class="flex flex-col">
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1">star_half</span>
+</div>
+<span class="text-gray-400 text-sm font-medium">2,141+ avaliações no Google</span>
+</div>
+</div>
+<p class="text-xl text-white font-medium italic">"O melhor brunch do Rio! O bolo de chocolate é imperdível."</p>
+<div class="flex items-center gap-3 mt-2">
+<div class="w-10 h-10 rounded-full bg-gray-600 bg-cover bg-center" data-alt="Reviewer profile picture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAu95pnPOwaB8VpDOvzGwlU53e_7oYxEzYsVPi6Q0O2NvnzZTZb7JjocmHruggEctfdWPTaRWH2ADeeBa0kFMgATa8XQ0MP6AX9Rj8U49Q__aFqbYMv8Nc0XKcj58SLjTQnV9WZO9n2Qle8lTK9I2JopssdFH5d7415bYeN8EKYTuMH1MoDmoVwiTJiYKd81ZJil4SBlj8yqG2JwU3FdMjmya-bVTDs7jXJ8YLFI4ObwE5pztnihlnTGfm7MsVwK5qhClHd3z1HKpE');"></div>
+<div>
+<p class="text-sm font-bold text-white">Mariana Costa</p>
+<p class="text-xs text-gray-500">Moradora de Botafogo</p>
+</div>
+</div>
+</div>
+<!-- Feature Icons -->
+<div class="grid grid-cols-2 gap-x-12 gap-y-8">
+<div class="flex items-start gap-4">
+<div class="p-3 rounded-full bg-surface-dark text-primary">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div>
+<h4 class="text-white font-bold mb-1">Culinária Autêntica</h4>
+<p class="text-sm text-gray-400">Sabores clássicos com toque gourmet.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-3 rounded-full bg-surface-dark text-primary">
+<span class="material-symbols-outlined">sentiment_satisfied</span>
+</div>
+<div>
+<h4 class="text-white font-bold mb-1">Hospitalidade </h4>
+<p class="text-sm text-gray-400">Atendimento acolhedor e inclusivo.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-3 rounded-full bg-surface-dark text-primary">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<div>
+<h4 class="text-white font-bold mb-1">Ambiente Nostálgico</h4>
+<p class="text-sm text-gray-400">Design inspirado nos anos 60.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-3 rounded-full bg-surface-dark text-primary">
+<span class="material-symbols-outlined">pets</span>
+</div>
+<div>
+<h4 class="text-white font-bold mb-1">Pet Friendly</h4>
+<p class="text-sm text-gray-400">Seu melhor amigo é bem-vindo.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Signature Dishes Gallery -->
+<section class="py-20 bg-[#140e0f]" id="menu">
+<div class="container mx-auto px-4 max-w-7xl">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<h2 class="text-primary text-sm font-bold tracking-widest uppercase mb-2">Favoritos da Casa</h2>
+<h3 class="text-4xl md:text-5xl font-black text-white">Pratos Assinatura</h3>
+</div>
+<a class="hidden md:flex items-center gap-2 text-white hover:text-primary transition-colors font-bold mt-4 md:mt-0" href="#">
+                    Ver menu completo <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[4/5] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Rich chocolate cake slice with frosting" ><img src="bolo.jpg" alt="bolo" width="500" height="500" ></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex justify-between items-end">
+<div>
+<h4 class="text-xl font-bold text-white mb-1 group-hover:text-primary transition-colors">Bolo de Chocolate</h4>
+<p class="text-sm text-gray-300 line-clamp-2">Nossa famosa receita secreta, úmido e intenso.</p>
+</div>
+<span class="text-lg font-bold text-primary">R$28</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[4/5] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Fluffy waffles topped with Nutella and strawberries"><img src="panquecas.jpg" alt="Panquecas" width="500" height="500"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Mais Pedido</div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex justify-between items-end">
+<div>
+<h4 class="text-2xl font-bold text-white mb-1 group-hover:text-primary transition-colors">Panqueca com Banana</h4>
+<p class="text-sm text-gray-300">Morangos frescos, chantilly artesanal e muita Nutella.</p>
+</div>
+<span class="text-xl font-bold text-primary">R$36</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[4/5] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Steak tartare with egg yolk on top" ><img src="torta.jpg" alt="torta" width="500" height="500"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex justify-between items-end">
+<div>
+<h4 class="text-xl font-bold text-white mb-1 group-hover:text-primary transition-colors">Torta de frango</h4>
+<p class="text-sm text-gray-300 line-clamp-2">Tartare clássico com gema curada e molho tonnato.</p>
+</div>
+<span class="text-lg font-bold text-primary">R$54</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[4/5] cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Brazilian cheese bread Pão de Queijo basket" ><img src="strogonof.jpg" alt="strogonoff" width="500" height="500"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex justify-between items-end">
+<div>
+<h4 class="text-xl font-bold text-white mb-1 group-hover:text-primary transition-colors">Strogonoff de Carne</h4>
+<p class="text-sm text-gray-300 line-clamp-2">Cestinha com 6 unidades, receita mineira.</p>
+</div>
+<span class="text-lg font-bold text-primary">R$22</span>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Brand Story -->
+<section class="py-20 bg-background-dark overflow-hidden" id="about">
+<div class="container mx-auto px-4 max-w-6xl">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-primary rounded-tl-3xl z-0"></div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-primary rounded-br-3xl z-0"></div>
+<div class="relative z-10 rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
+<div class="w-full h-full bg-cover bg-center" data-alt="Vintage diner interior black and white photo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-lwnaiWMBXBTOGFksgpdD0qQRbSSH43rEgXT2p_ZFPaK0NyCAql6nMPExdaimnXAWWvo1PDRgSyNsgyFbJL4a0CU2VZQPRiiMxu9L96uoXgUYwW0bcixYkJJYZ9wan4Qj3lawk3apbT7zMPSbk7AU4yqA8r526-Nzp-bbPRqMgceSquRjj00XLE1F1t5P8HfgcYZIOlMxcsv8mWljy2IFOxjDzxpJ5SXi4UmTnuxSPLYJNYVxSKeXg8lc6Ger0C-qP0Y40bNETpQ');"></div>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<h2 class="text-primary text-sm font-bold tracking-widest uppercase mb-2">Nossa História</h2>
+<h3 class="text-4xl font-black text-white mb-6">Mais do que um Diner.<br/>Uma experiência.</h3>
+<p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        Inspirados pelos clássicos diners americanos da década de 60, trouxemos para o Rio de Janeiro não apenas a estética, mas a alma da hospitalidade. 
+                    </p>
+<p class="text-gray-400 mb-8 leading-relaxed">
+                        Cada prato conta uma história, cada detalhe da decoração foi pensado para transportar você no tempo, sem perder o conforto moderno. Somos apaixonados por servir bem e criar memórias.
+                    </p>
+<button class="text-white border-b-2 border-primary pb-1 hover:text-primary transition-colors font-bold uppercase tracking-wide text-sm">Ler história completa</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Hours -->
+<section class="py-0 relative" id="location">
+<div class="flex flex-col lg:flex-row min-h-[500px]">
+<!-- Info Side -->
+<div class="w-full lg:w-1/3 bg-[#241a1b] p-10 flex flex-col justify-center border-r border-[#38292a]">
+<h3 class="text-3xl font-black text-white mb-8">Visite-nos</h3>
+<div class="flex items-start gap-4 mb-8">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h4 class="text-white font-bold mb-1">Endereço</h4>
+<p class="text-gray-400">R. Real Grandeza, 193<br/>Botafogo, Rio de Janeiro<br/>RJ, 22281-033</p>
+<a class="text-primary text-sm font-bold mt-2 inline-block hover:underline" href="https://www.google.com/maps/dir/-22.9514044,-43.1900647/Dainer+-+R.+Real+Grandeza,+193+-+Botafogo,+Rio+de+Janeiro+-+RJ,+22281-033/@-22.9533394,-43.1938842,17z/data=!3m1!4b1!4m17!1m7!3m6!1s0x997f7c8137226b:0x6445594dbc5910fc!2sDainer!8m2!3d-22.9552844!4d-43.1922899!16s%2Fg%2F11ts057w5f!4m8!1m1!4e1!1m5!1m1!1s0x997f7c8137226b:0x6445594dbc5910fc!2m2!1d-43.1923733!2d-22.955277?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Como chegar →</a>
+</div>
+</div>
+<div class="flex items-start gap-4 mb-8">
+<span class="material-symbols-outlined text-primary mt-1">schedule</span>
+<div>
+<h4 class="text-white font-bold mb-1">Horário</h4>
+<p class="text-gray-400">Seg - Dom: 09:00 - 22:00</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">call</span>
+<div>
+<h4 class="text-white font-bold mb-1">Contato</h4>
+<p class="text-gray-400">(21) 99999-9999</p>
+</div>
+</div>
+</div>
+<!-- Map Side -->
+<div class="w-full lg:w-2/3 bg-gray-800 relative min-h-[400px]">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.8624504549257!2d-43.1925232!3d-22.9552923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f7c8137226b%3A0x6445594dbc5910fc!2sDainer!5e0!3m2!1spt-BR!2sbr!4v1767810694024!5m2!1spt-BR!2sbr" width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Fake Map UI Elements for realism -->
+<div class="absolute top-4 right-4 bg-white text-black p-2 rounded shadow-lg flex flex-col gap-2">
+<button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded"><span class="material-symbols-outlined">add</span></button>
+<button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded"><span class="material-symbols-outlined">remove</span></button>
+</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="relative">
+<span class="material-symbols-outlined text-primary text-5xl drop-shadow-lg animate-bounce">location_on</span>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-2 bg-black/50 blur-sm rounded-[100%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reservation & Pickup CTAs -->
+<section class="py-20 bg-background-dark border-t border-[#38292a]" id="reservas">
+<div class="container mx-auto px-4 max-w-4xl text-center">
+<h2 class="text-4xl font-black text-white mb-4">Pronto para uma experiência deliciosa?</h2>
+<p class="text-gray-400 mb-10 max-w-xl mx-auto">Garanta sua mesa agora ou peça para levar e aproveite o Dainer no conforto da sua casa.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="group flex flex-col items-center justify-center w-full sm:w-64 h-40 bg-primary hover:bg-primary-hover rounded-2xl transition-all p-6 shadow-neon relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:scale-110 transition-transform">table_restaurant</span>
+<span class="text-xl font-bold">Fazer Reserva</span>
+<span class="text-sm opacity-80 mt-1">Poucas mesas restantes</span>
+</button>
+<button class="group flex flex-col items-center justify-center w-full sm:w-64 h-40 bg-surface-dark border border-[#38292a] hover:border-primary hover:bg-[#2a1d1e] rounded-2xl transition-all p-6 relative overflow-hidden">
+<span class="material-symbols-outlined text-4xl mb-4 text-white group-hover:text-primary transition-colors">shopping_bag</span>
+<span class="text-xl font-bold text-white">Pedir para Retirada</span>
+<span class="text-sm text-gray-400 mt-1">Pronto em 20 min</span>
+</button>
+</div>
+</div>
+</section>
+
+<!-- Email Capture -->
+<div class="bg-primary/10 border border-primary/20 rounded-2xl p-8 md:p-12 text-center mb-16 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-48 h-48 bg-primary/20 rounded-full blur-3xl"></div>
+<h3 class="text-2xl font-black text-white mb-2 relative z-10">Entre para o Clube Dainer</h3>
+<p class="text-gray-300 mb-6 max-w-md mx-auto relative z-10">Receba novidades, convites exclusivos e <span class="text-white font-bold">ganhe um café</span> na sua primeira visita.</p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto relative z-10">
+<input class="flex-1 bg-background-dark border border-[#38292a] text-white px-4 py-3 rounded-full focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder-gray-600" placeholder="Seu melhor e-mail" type="email"/>
+<button class="bg-primary hover:bg-primary-hover text-white font-bold px-6 py-3 rounded-full shadow-neon transition-colors" type="button">Cadastrar</button>
+</form>
+</div>
+<!-- Bottom Footer -->
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-[#38292a] pt-8 gap-4">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary">dinner_dining</span>
+<span class="font-bold text-lg uppercase tracking-tight">Dainer</span>
+</div>
+<div class="text-gray-500 text-sm">
+                    © 2026 Dainer Rio. Todos os direitos reservados.
+                </div>
+<div class="flex gap-6">
+<a class="text-gray-500 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-gray-500 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">smart_display</span></a> <!-- Using smart_display as a proxy for social media icon -->
+</div>
+</div>
+</div>
+</footer>
+</body></html>
